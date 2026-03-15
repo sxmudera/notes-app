@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>notes.</h1>
+    <button onclick="openModal()">new +</button>
+  </header>
+
+  <main id="notesGrid">
+    <p class="empty">belum ada catatan.</p>
+  </main>
+
+  <div class="overlay" id="modalOverlay">
+    <div class="modal">
+      <p id="modalTitle">catatan baru</p>
+      <input id="inputJudul" placeholder="judul" />
+      <textarea id="inputIsi" placeholder="isi catatan..." rows="6"></textarea>
+      <div class="row">
+        <button class="batal" onclick="closeModal()">batal</button>
+        <button class="simpan" onclick="saveNote()">simpan</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = 'https://notes-backend-311135974217.asia-southeast2.run.app/api/catatan';
 
 let notes = [];
 let currentNoteId = null;
